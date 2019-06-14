@@ -49,11 +49,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CloseDesignPermitEntry.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DesignPermitImportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DesignPermitImportDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DesignPermitsClass.cs" />
     <Compile Include="DesignPermitsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DesignPermitsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindDesignPermitImportByTransactionDateDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignPermitImportByTransactionDateDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="FindOpenPermitsByProjectIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -90,16 +100,56 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>InsertDesignPermitEntry.xsd</DependentUpon>
     </Compile>
+    <Compile Include="InsertDesignPermitImportEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertDesignPermitImportEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="UpdateDesignPermitActivationDateEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignPermitActivationDateEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignPermitApprovalEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignPermitApprovalEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignPermitClosedDateEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignPermitClosedDateEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignPermitCommentsEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignPermitCommentsEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignPermitExpirationDateEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignPermitExpirationDateEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UpdateDesignPermitStatusUpdateEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UpdateDesignPermitStatusUpdateEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignPermitSubmittedEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignPermitSubmittedEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignProjectActiveEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignProjectActiveEntry.xsd</DependentUpon>
     </Compile>
     <Compile Include="UpdateDesignProjectPermitCostEntry.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -120,6 +170,17 @@
     <None Include="CloseDesignPermitEntry.xss">
       <DependentUpon>CloseDesignPermitEntry.xsd</DependentUpon>
     </None>
+    <None Include="DesignPermitImportDataSet.xsc">
+      <DependentUpon>DesignPermitImportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DesignPermitImportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DesignPermitImportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DesignPermitImportDataSet.xss">
+      <DependentUpon>DesignPermitImportDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DesignPermitsDataSet.xsc">
       <DependentUpon>DesignPermitsDataSet.xsd</DependentUpon>
     </None>
@@ -130,6 +191,17 @@
     </None>
     <None Include="DesignPermitsDataSet.xss">
       <DependentUpon>DesignPermitsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignPermitImportByTransactionDateDataSet.xsc">
+      <DependentUpon>FindDesignPermitImportByTransactionDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignPermitImportByTransactionDateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignPermitImportByTransactionDateDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignPermitImportByTransactionDateDataSet.xss">
+      <DependentUpon>FindDesignPermitImportByTransactionDateDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindOpenPermitsByProjectIDDataSet.xsc">
       <DependentUpon>FindOpenPermitsByProjectIDDataSet.xsd</DependentUpon>
@@ -208,9 +280,75 @@
     <None Include="InsertDesignPermitEntry.xss">
       <DependentUpon>InsertDesignPermitEntry.xsd</DependentUpon>
     </None>
+    <None Include="InsertDesignPermitImportEntry.xsc">
+      <DependentUpon>InsertDesignPermitImportEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertDesignPermitImportEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertDesignPermitImportEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertDesignPermitImportEntry.xss">
+      <DependentUpon>InsertDesignPermitImportEntry.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UpdateDesignPermitActivationDateEntry.xsc">
+      <DependentUpon>UpdateDesignPermitActivationDateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitActivationDateEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignPermitActivationDateEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignPermitActivationDateEntry.xss">
+      <DependentUpon>UpdateDesignPermitActivationDateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitApprovalEntry.xsc">
+      <DependentUpon>UpdateDesignPermitApprovalEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitApprovalEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignPermitApprovalEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignPermitApprovalEntry.xss">
+      <DependentUpon>UpdateDesignPermitApprovalEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitClosedDateEntry.xsc">
+      <DependentUpon>UpdateDesignPermitClosedDateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitClosedDateEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignPermitClosedDateEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignPermitClosedDateEntry.xss">
+      <DependentUpon>UpdateDesignPermitClosedDateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitCommentsEntry.xsc">
+      <DependentUpon>UpdateDesignPermitCommentsEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitCommentsEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignPermitCommentsEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignPermitCommentsEntry.xss">
+      <DependentUpon>UpdateDesignPermitCommentsEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitExpirationDateEntry.xsc">
+      <DependentUpon>UpdateDesignPermitExpirationDateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitExpirationDateEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignPermitExpirationDateEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignPermitExpirationDateEntry.xss">
+      <DependentUpon>UpdateDesignPermitExpirationDateEntry.xsd</DependentUpon>
     </None>
     <None Include="UpdateDesignPermitStatusUpdateEntry.xsc">
       <DependentUpon>UpdateDesignPermitStatusUpdateEntry.xsd</DependentUpon>
@@ -222,6 +360,28 @@
     </None>
     <None Include="UpdateDesignPermitStatusUpdateEntry.xss">
       <DependentUpon>UpdateDesignPermitStatusUpdateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitSubmittedEntry.xsc">
+      <DependentUpon>UpdateDesignPermitSubmittedEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitSubmittedEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignPermitSubmittedEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignPermitSubmittedEntry.xss">
+      <DependentUpon>UpdateDesignPermitSubmittedEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectActiveEntry.xsc">
+      <DependentUpon>UpdateDesignProjectActiveEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectActiveEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignProjectActiveEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignProjectActiveEntry.xss">
+      <DependentUpon>UpdateDesignProjectActiveEntry.xsd</DependentUpon>
     </None>
     <None Include="UpdateDesignProjectPermitCostEntry.xsc">
       <DependentUpon>UpdateDesignProjectPermitCostEntry.xsd</DependentUpon>
