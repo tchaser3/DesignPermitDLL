@@ -69,6 +69,42 @@ namespace DesignPermitsDLL
 
         UpdateDesignProjectActiveEntryTableAdapters.QueriesTableAdapter aUpdateDesignProjectActiveTableAdapter;
 
+        findAllOpenDesignPermitImportsDataSet aFindAllOpenDesignPermitImportsDataSet;
+        findAllOpenDesignPermitImportsDataSetTableAdapters.FindAllOpenDesignPermitImportsTableAdapter aFindAllOpenDesignPermitImportsTableAdapter;
+
+        FindDesignPermitImportByAssignedProjectIDDataSet aFindDesignPermitImportByAssignedProjectIDDataSet;
+        FindDesignPermitImportByAssignedProjectIDDataSetTableAdapters.FindDesignPermitImportByAssignedProjectIDTableAdapter aFindDesignPermitImportByAssignedProjectIDTableAdapter;
+
+        public FindDesignPermitImportByAssignedProjectIDDataSet FindDesignPermitImportByAssignedProjectID(string strAssignedProjectID)
+        {
+            try
+            {
+                aFindDesignPermitImportByAssignedProjectIDDataSet = new FindDesignPermitImportByAssignedProjectIDDataSet();
+                aFindDesignPermitImportByAssignedProjectIDTableAdapter = new FindDesignPermitImportByAssignedProjectIDDataSetTableAdapters.FindDesignPermitImportByAssignedProjectIDTableAdapter();
+                aFindDesignPermitImportByAssignedProjectIDTableAdapter.Fill(aFindDesignPermitImportByAssignedProjectIDDataSet.FindDesignPermitImportByAssignedProjectID, strAssignedProjectID);
+            }
+            catch(Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Design Permits Class // Find Design Permit Import By Assigned Project ID " + Ex.Message);
+            }
+
+            return aFindDesignPermitImportByAssignedProjectIDDataSet;
+        }
+        public findAllOpenDesignPermitImportsDataSet FindAllOpenDesignPermitImports()
+        {
+            try
+            {
+                aFindAllOpenDesignPermitImportsDataSet = new findAllOpenDesignPermitImportsDataSet();
+                aFindAllOpenDesignPermitImportsTableAdapter = new findAllOpenDesignPermitImportsDataSetTableAdapters.FindAllOpenDesignPermitImportsTableAdapter();
+                aFindAllOpenDesignPermitImportsTableAdapter.Fill(aFindAllOpenDesignPermitImportsDataSet.FindAllOpenDesignPermitImports);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Design Permits Class // Find All Open Design Permit Imports " + Ex.Message);
+            }
+
+            return aFindAllOpenDesignPermitImportsDataSet;
+        }
         public bool UpdateDesignProjectActive(int intTransactionID, bool blnProjectActive)
         {
             bool blnFatalError = false;

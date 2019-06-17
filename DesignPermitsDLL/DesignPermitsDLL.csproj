@@ -60,6 +60,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DesignPermitsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="findAllOpenDesignPermitImportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>findAllOpenDesignPermitImportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindDesignPermitImportByAssignedProjectIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignPermitImportByAssignedProjectIDDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindDesignPermitImportByTransactionDateDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -191,6 +201,28 @@
     </None>
     <None Include="DesignPermitsDataSet.xss">
       <DependentUpon>DesignPermitsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="findAllOpenDesignPermitImportsDataSet.xsc">
+      <DependentUpon>findAllOpenDesignPermitImportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="findAllOpenDesignPermitImportsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>findAllOpenDesignPermitImportsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="findAllOpenDesignPermitImportsDataSet.xss">
+      <DependentUpon>findAllOpenDesignPermitImportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignPermitImportByAssignedProjectIDDataSet.xsc">
+      <DependentUpon>FindDesignPermitImportByAssignedProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignPermitImportByAssignedProjectIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignPermitImportByAssignedProjectIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignPermitImportByAssignedProjectIDDataSet.xss">
+      <DependentUpon>FindDesignPermitImportByAssignedProjectIDDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindDesignPermitImportByTransactionDateDataSet.xsc">
       <DependentUpon>FindDesignPermitImportByTransactionDateDataSet.xsd</DependentUpon>
