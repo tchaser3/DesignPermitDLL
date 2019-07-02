@@ -266,14 +266,14 @@ namespace DesignPermitsDLL
 
             return aFindDesignPermitImportbyTransactionDateDataSet;
         }
-        public bool InsertDesignPermitImport(int intProjectID, string strCarlID, string strSurveyType, string strJobName, string strFieldEngineer, string strConstSupervisor, string strPermitType, DateTime datIssueDate, string strPermitAgency, DateTime datTransactionDate)
+        public bool InsertDesignPermitImport(int intProjectID, string strCarlID, string strSurveyType, string strJobName, string strFieldEngineer, string strConstSupervisor, string strPermitType, DateTime datIssueDate, string strPermitAgency, DateTime datTransactionDate, string strPermitComment)
         {
             bool blnFatalError = false;
 
             try
             {
                 aInsertDesignPermitImportTableAdapter = new InsertDesignPermitImportEntryTableAdapters.QueriesTableAdapter();
-                aInsertDesignPermitImportTableAdapter.InsertDesignPermitImport(intProjectID, strCarlID, strSurveyType, strJobName, strFieldEngineer, strConstSupervisor, strPermitType, datIssueDate, strPermitAgency, datTransactionDate);
+                aInsertDesignPermitImportTableAdapter.InsertDesignPermitImport(intProjectID, strCarlID, strSurveyType, strJobName, strFieldEngineer, strConstSupervisor, strPermitType, datIssueDate, strPermitAgency, datTransactionDate, strPermitComment);
             }
             catch (Exception Ex)
             {
