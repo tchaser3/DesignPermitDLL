@@ -146,6 +146,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UpdateDesignPermitExpirationDateEntry.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UpdateDesignPermitImportNotes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignPermitImportNotes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UpdateDesignPermitStatusUpdateEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -381,6 +386,17 @@
     </None>
     <None Include="UpdateDesignPermitExpirationDateEntry.xss">
       <DependentUpon>UpdateDesignPermitExpirationDateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitImportNotes.xsc">
+      <DependentUpon>UpdateDesignPermitImportNotes.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignPermitImportNotes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignPermitImportNotes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignPermitImportNotes.xss">
+      <DependentUpon>UpdateDesignPermitImportNotes.xsd</DependentUpon>
     </None>
     <None Include="UpdateDesignPermitStatusUpdateEntry.xsc">
       <DependentUpon>UpdateDesignPermitStatusUpdateEntry.xsd</DependentUpon>

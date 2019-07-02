@@ -75,6 +75,26 @@ namespace DesignPermitsDLL
         FindDesignPermitImportByAssignedProjectIDDataSet aFindDesignPermitImportByAssignedProjectIDDataSet;
         FindDesignPermitImportByAssignedProjectIDDataSetTableAdapters.FindDesignPermitImportByAssignedProjectIDTableAdapter aFindDesignPermitImportByAssignedProjectIDTableAdapter;
 
+        UpdateDesignPermitImportNotesTableAdapters.QueriesTableAdapter aUpdateDesignPermitImportNotesTableAdapter;
+
+        public bool UpdateDesignPermitImportNotes(int intTransactionID, string strPermitComments)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aUpdateDesignPermitImportNotesTableAdapter = new UpdateDesignPermitImportNotesTableAdapters.QueriesTableAdapter();
+                aUpdateDesignPermitImportNotesTableAdapter.UpdateDesignPermitImportNotes(intTransactionID, strPermitComments);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Design Permit Class // Update Design Permit Import Notes " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
         public FindDesignPermitImportByAssignedProjectIDDataSet FindDesignPermitImportByAssignedProjectID(string strAssignedProjectID)
         {
             try
