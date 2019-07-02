@@ -299,6 +299,8 @@ namespace DesignPermitsDLL {
             
             private global::System.Data.DataColumn columnPermitAgency;
             
+            private global::System.Data.DataColumn columnPermitComment;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FindDesignPermitImportByAssignedProjectIDDataTable() {
@@ -414,6 +416,14 @@ namespace DesignPermitsDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PermitCommentColumn {
+                get {
+                    return this.columnPermitComment;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -449,7 +459,7 @@ namespace DesignPermitsDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignPermitImportByAssignedProjectIDRow AddFindDesignPermitImportByAssignedProjectIDRow(System.DateTime TransactionDate, int ProjectID, string AssignedProjectID, string ProjectName, string FieldEngineer, string ConstSupervisor, string PermitType, System.DateTime IssueDate, string PermitAgency) {
+            public FindDesignPermitImportByAssignedProjectIDRow AddFindDesignPermitImportByAssignedProjectIDRow(System.DateTime TransactionDate, int ProjectID, string AssignedProjectID, string ProjectName, string FieldEngineer, string ConstSupervisor, string PermitType, System.DateTime IssueDate, string PermitAgency, string PermitComment) {
                 FindDesignPermitImportByAssignedProjectIDRow rowFindDesignPermitImportByAssignedProjectIDRow = ((FindDesignPermitImportByAssignedProjectIDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -461,7 +471,8 @@ namespace DesignPermitsDLL {
                         ConstSupervisor,
                         PermitType,
                         IssueDate,
-                        PermitAgency};
+                        PermitAgency,
+                        PermitComment};
                 rowFindDesignPermitImportByAssignedProjectIDRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFindDesignPermitImportByAssignedProjectIDRow);
                 return rowFindDesignPermitImportByAssignedProjectIDRow;
@@ -501,6 +512,7 @@ namespace DesignPermitsDLL {
                 this.columnPermitType = base.Columns["PermitType"];
                 this.columnIssueDate = base.Columns["IssueDate"];
                 this.columnPermitAgency = base.Columns["PermitAgency"];
+                this.columnPermitComment = base.Columns["PermitComment"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -526,6 +538,8 @@ namespace DesignPermitsDLL {
                 base.Columns.Add(this.columnIssueDate);
                 this.columnPermitAgency = new global::System.Data.DataColumn("PermitAgency", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPermitAgency);
+                this.columnPermitComment = new global::System.Data.DataColumn("PermitComment", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPermitComment);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnTransactionID}, true));
                 this.columnTransactionID.AutoIncrement = true;
@@ -547,6 +561,7 @@ namespace DesignPermitsDLL {
                 this.columnIssueDate.AllowDBNull = false;
                 this.columnPermitAgency.AllowDBNull = false;
                 this.columnPermitAgency.MaxLength = 2147483647;
+                this.columnPermitComment.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -796,6 +811,35 @@ namespace DesignPermitsDLL {
                     this[this.tableFindDesignPermitImportByAssignedProjectID.PermitAgencyColumn] = value;
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PermitComment {
+                get {
+                    try {
+                        return ((string)(this[this.tableFindDesignPermitImportByAssignedProjectID.PermitCommentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PermitComment\' in table \'FindDesignPermitImportByAssignedPr" +
+                                "ojectID\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFindDesignPermitImportByAssignedProjectID.PermitCommentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPermitCommentNull() {
+                return this.IsNull(this.tableFindDesignPermitImportByAssignedProjectID.PermitCommentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPermitCommentNull() {
+                this[this.tableFindDesignPermitImportByAssignedProjectID.PermitCommentColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -967,6 +1011,7 @@ namespace DesignPermitsDLL.FindDesignPermitImportByAssignedProjectIDDataSetTable
             tableMapping.ColumnMappings.Add("PermitType", "PermitType");
             tableMapping.ColumnMappings.Add("IssueDate", "IssueDate");
             tableMapping.ColumnMappings.Add("PermitAgency", "PermitAgency");
+            tableMapping.ColumnMappings.Add("PermitComment", "PermitComment");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

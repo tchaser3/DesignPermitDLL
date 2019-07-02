@@ -32,6 +32,7 @@
               <Mapping SourceColumn="PermitType" DataSetColumn="PermitType" />
               <Mapping SourceColumn="IssueDate" DataSetColumn="IssueDate" />
               <Mapping SourceColumn="PermitAgency" DataSetColumn="PermitAgency" />
+              <Mapping SourceColumn="PermitComment" DataSetColumn="PermitComment" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -43,7 +44,7 @@
   <xs:element name="FindDesignPermitImportByAssignedProjectIDDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindDesignPermitImportByAssignedProjectIDDataSet" msprop:Generator_UserDSName="FindDesignPermitImportByAssignedProjectIDDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FindDesignPermitImportByAssignedProjectID" msprop:Generator_TableClassName="FindDesignPermitImportByAssignedProjectIDDataTable" msprop:Generator_TableVarName="tableFindDesignPermitImportByAssignedProjectID" msprop:Generator_TablePropName="FindDesignPermitImportByAssignedProjectID" msprop:Generator_RowDeletingName="FindDesignPermitImportByAssignedProjectIDRowDeleting" msprop:Generator_RowChangingName="FindDesignPermitImportByAssignedProjectIDRowChanging" msprop:Generator_RowEvHandlerName="FindDesignPermitImportByAssignedProjectIDRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDesignPermitImportByAssignedProjectIDRowDeleted" msprop:Generator_UserTableName="FindDesignPermitImportByAssignedProjectID" msprop:Generator_RowChangedName="FindDesignPermitImportByAssignedProjectIDRowChanged" msprop:Generator_RowEvArgName="FindDesignPermitImportByAssignedProjectIDRowChangeEvent" msprop:Generator_RowClassName="FindDesignPermitImportByAssignedProjectIDRow">
+        <xs:element name="FindDesignPermitImportByAssignedProjectID" msprop:Generator_TableClassName="FindDesignPermitImportByAssignedProjectIDDataTable" msprop:Generator_TableVarName="tableFindDesignPermitImportByAssignedProjectID" msprop:Generator_RowChangedName="FindDesignPermitImportByAssignedProjectIDRowChanged" msprop:Generator_TablePropName="FindDesignPermitImportByAssignedProjectID" msprop:Generator_RowDeletingName="FindDesignPermitImportByAssignedProjectIDRowDeleting" msprop:Generator_RowChangingName="FindDesignPermitImportByAssignedProjectIDRowChanging" msprop:Generator_RowEvHandlerName="FindDesignPermitImportByAssignedProjectIDRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDesignPermitImportByAssignedProjectIDRowDeleted" msprop:Generator_RowClassName="FindDesignPermitImportByAssignedProjectIDRow" msprop:Generator_UserTableName="FindDesignPermitImportByAssignedProjectID" msprop:Generator_RowEvArgName="FindDesignPermitImportByAssignedProjectIDRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TransactionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
@@ -86,6 +87,13 @@
               </xs:element>
               <xs:element name="IssueDate" msprop:Generator_ColumnVarNameInTable="columnIssueDate" msprop:Generator_ColumnPropNameInRow="IssueDate" msprop:Generator_ColumnPropNameInTable="IssueDateColumn" msprop:Generator_UserColumnName="IssueDate" type="xs:dateTime" />
               <xs:element name="PermitAgency" msprop:Generator_ColumnVarNameInTable="columnPermitAgency" msprop:Generator_ColumnPropNameInRow="PermitAgency" msprop:Generator_ColumnPropNameInTable="PermitAgencyColumn" msprop:Generator_UserColumnName="PermitAgency">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitComment" msprop:Generator_ColumnVarNameInTable="columnPermitComment" msprop:Generator_ColumnPropNameInRow="PermitComment" msprop:Generator_ColumnPropNameInTable="PermitCommentColumn" msprop:Generator_UserColumnName="PermitComment" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
