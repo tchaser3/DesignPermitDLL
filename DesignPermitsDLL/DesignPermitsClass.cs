@@ -311,14 +311,14 @@ namespace DesignPermitsDLL
                 TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Design Permit Class // Update Design Permit Import DB " + Ex.Message);
             }
         }
-        public bool UpdateDesignProjectPermitCost(int intTransactionID, decimal decPermitCost)
+        public bool UpdateDesignProjectPermitCost(int intTransactionID, decimal decPermitCost, decimal decPermitPrice)
         {
             bool blnFatalError = false;
 
             try
             {
                 aUpdateDesignProjectPermitCostTableAdapter = new UpdateDesignProjectPermitCostEntryTableAdapters.QueriesTableAdapter();
-                aUpdateDesignProjectPermitCostTableAdapter.UpdateDesignProjectPermitCost(intTransactionID, decPermitCost);
+                aUpdateDesignProjectPermitCostTableAdapter.UpdateDesignProjectPermitCost(intTransactionID, decPermitCost, decPermitPrice);
             }
             catch (Exception Ex)
             {
