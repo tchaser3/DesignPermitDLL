@@ -314,7 +314,7 @@ namespace DesignPermitsDLL
         public bool UpdateDesignProjectPermitCost(int intTransactionID, decimal decPermitCost, decimal decPermitPrice)
         {
             bool blnFatalError = false;
-
+            
             try
             {
                 aUpdateDesignProjectPermitCostTableAdapter = new UpdateDesignProjectPermitCostEntryTableAdapters.QueriesTableAdapter();
