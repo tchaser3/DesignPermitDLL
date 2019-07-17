@@ -29,6 +29,8 @@
               <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
               <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
               <Mapping SourceColumn="PermitNotes" DataSetColumn="PermitNotes" />
+              <Mapping SourceColumn="PermitCost" DataSetColumn="PermitCost" />
+              <Mapping SourceColumn="PermitPrice" DataSetColumn="PermitPrice" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -40,7 +42,7 @@
   <xs:element name="FindPermitsByProjectIDDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindPermitsByProjectIDDataSet" msprop:Generator_UserDSName="FindPermitsByProjectIDDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FindPermitsByProjectID" msprop:Generator_TableClassName="FindPermitsByProjectIDDataTable" msprop:Generator_TableVarName="tableFindPermitsByProjectID" msprop:Generator_TablePropName="FindPermitsByProjectID" msprop:Generator_RowDeletingName="FindPermitsByProjectIDRowDeleting" msprop:Generator_RowChangingName="FindPermitsByProjectIDRowChanging" msprop:Generator_RowEvHandlerName="FindPermitsByProjectIDRowChangeEventHandler" msprop:Generator_RowDeletedName="FindPermitsByProjectIDRowDeleted" msprop:Generator_UserTableName="FindPermitsByProjectID" msprop:Generator_RowChangedName="FindPermitsByProjectIDRowChanged" msprop:Generator_RowEvArgName="FindPermitsByProjectIDRowChangeEvent" msprop:Generator_RowClassName="FindPermitsByProjectIDRow">
+        <xs:element name="FindPermitsByProjectID" msprop:Generator_TableClassName="FindPermitsByProjectIDDataTable" msprop:Generator_TableVarName="tableFindPermitsByProjectID" msprop:Generator_RowChangedName="FindPermitsByProjectIDRowChanged" msprop:Generator_TablePropName="FindPermitsByProjectID" msprop:Generator_RowDeletingName="FindPermitsByProjectIDRowDeleting" msprop:Generator_RowChangingName="FindPermitsByProjectIDRowChanging" msprop:Generator_RowEvHandlerName="FindPermitsByProjectIDRowChangeEventHandler" msprop:Generator_RowDeletedName="FindPermitsByProjectIDRowDeleted" msprop:Generator_RowClassName="FindPermitsByProjectIDRow" msprop:Generator_UserTableName="FindPermitsByProjectID" msprop:Generator_RowEvArgName="FindPermitsByProjectIDRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
@@ -74,6 +76,8 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="PermitCost" msprop:Generator_ColumnVarNameInTable="columnPermitCost" msprop:Generator_ColumnPropNameInRow="PermitCost" msprop:Generator_ColumnPropNameInTable="PermitCostColumn" msprop:Generator_UserColumnName="PermitCost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PermitPrice" msprop:Generator_ColumnVarNameInTable="columnPermitPrice" msprop:Generator_ColumnPropNameInRow="PermitPrice" msprop:Generator_ColumnPropNameInTable="PermitPriceColumn" msprop:Generator_UserColumnName="PermitPrice" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

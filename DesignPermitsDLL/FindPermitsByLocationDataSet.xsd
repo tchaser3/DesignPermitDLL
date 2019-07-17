@@ -33,6 +33,8 @@
               <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
               <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
               <Mapping SourceColumn="PermitNotes" DataSetColumn="PermitNotes" />
+              <Mapping SourceColumn="PermitCost" DataSetColumn="PermitCost" />
+              <Mapping SourceColumn="PermitPrice" DataSetColumn="PermitPrice" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -44,7 +46,7 @@
   <xs:element name="FindPermitsByLocationDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindPermitsByLocationDataSet" msprop:Generator_UserDSName="FindPermitsByLocationDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FindPermitsByLocation" msprop:Generator_TableClassName="FindPermitsByLocationDataTable" msprop:Generator_TableVarName="tableFindPermitsByLocation" msprop:Generator_TablePropName="FindPermitsByLocation" msprop:Generator_RowDeletingName="FindPermitsByLocationRowDeleting" msprop:Generator_RowChangingName="FindPermitsByLocationRowChanging" msprop:Generator_RowEvHandlerName="FindPermitsByLocationRowChangeEventHandler" msprop:Generator_RowDeletedName="FindPermitsByLocationRowDeleted" msprop:Generator_UserTableName="FindPermitsByLocation" msprop:Generator_RowChangedName="FindPermitsByLocationRowChanged" msprop:Generator_RowEvArgName="FindPermitsByLocationRowChangeEvent" msprop:Generator_RowClassName="FindPermitsByLocationRow">
+        <xs:element name="FindPermitsByLocation" msprop:Generator_TableClassName="FindPermitsByLocationDataTable" msprop:Generator_TableVarName="tableFindPermitsByLocation" msprop:Generator_RowChangedName="FindPermitsByLocationRowChanged" msprop:Generator_TablePropName="FindPermitsByLocation" msprop:Generator_RowDeletingName="FindPermitsByLocationRowDeleting" msprop:Generator_RowChangingName="FindPermitsByLocationRowChanging" msprop:Generator_RowEvHandlerName="FindPermitsByLocationRowChangeEventHandler" msprop:Generator_RowDeletedName="FindPermitsByLocationRowDeleted" msprop:Generator_RowClassName="FindPermitsByLocationRow" msprop:Generator_UserTableName="FindPermitsByLocation" msprop:Generator_RowEvArgName="FindPermitsByLocationRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
@@ -92,6 +94,8 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="PermitCost" msprop:Generator_ColumnVarNameInTable="columnPermitCost" msprop:Generator_ColumnPropNameInRow="PermitCost" msprop:Generator_ColumnPropNameInTable="PermitCostColumn" msprop:Generator_UserColumnName="PermitCost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PermitPrice" msprop:Generator_ColumnVarNameInTable="columnPermitPrice" msprop:Generator_ColumnPropNameInRow="PermitPrice" msprop:Generator_ColumnPropNameInTable="PermitPriceColumn" msprop:Generator_UserColumnName="PermitPrice" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
